@@ -1,7 +1,6 @@
-dkjson-mixed
+dkjson-mixed Version 1.0
 =========================================================
 Suhada's extension to dkjson to allow mixed table indexes.
-Version 1.0
 
 Without this extension dkjson encoding/decoding doesn't handle mixed table indexes.
 For example decode(encode({a="x","P"})) is {a="x", ["1"] = "P"} (Note key for "P" is a string rather than a number).
